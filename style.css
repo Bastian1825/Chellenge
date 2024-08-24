@@ -21,19 +21,17 @@
     box-sizing: border-box;
     font-family: var(--fuente-inter);
     text-decoration: none;
-    background: var(--color-letra-boton-azul);
+    background: var(--color-primario);
 }
 ::selection{
     background: green;
     color: var(--color-letra-boton-azul);
 }
 body{
-    width: 100%;
+    width: auto;
+    height: auto;
     background-color: var(--color-primario);
     
-}
-img{
-    max-width: 100%;
 }
 header{
     position: absolute;
@@ -50,6 +48,7 @@ main{
     display: flex;
     flex-direction: row;
     background-color: var(--color-primario);
+    line-height: 50px;
     
    
 }
@@ -70,11 +69,15 @@ main{
     border: none; 
     resize: none;
     background-color: var(--color-primario);
-    
 
 }
 .encriptar::placeholder,:focus{
     color:var(--color-secundario);
+}
+.encriptar:focus,
+.encriptar:active{
+    border: none;
+    outline: none;
 }
 .encriptador-aviso{
     display: flex;
@@ -83,7 +86,7 @@ main{
     padding: 0;
     gap: 8px;
     position: absolute;
-    top: 500px;
+    top: 1060px;
     background-color: var(--color-primario);
 }
 .img-aviso{
@@ -97,11 +100,12 @@ main{
     width: 100%;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 30px;
     line-height: 150%;
     opacity: 0.8;
     color: var(--color-texto-respuesta-subtitulo);
     background-color: var(--color-primario);
+    
 }
 .encriptador-contenedor{
     display: flex;
@@ -109,18 +113,18 @@ main{
     align-items: flex-start;
     gap: 8px;
     position: absolute;
-    top: 526px;
+    top:1110px;
     background-color: var(--color-primario);
 
 }
 
 .btn-encriptar{
-    width: 328px;
+    width: 400px;
     height: 67px;
     padding: 24px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 19px;
     text-align: center;
     color: var(--color-letra-boton-azul);
@@ -138,12 +142,12 @@ main{
 }
 
 .btn-desencriptar{
-    width: 328px;
+    width: 400px;
     height: 67px;
     padding: 24px;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 28px;
     line-height: 19px;
     text-align: center;
     color: var(--color-secundario);
@@ -161,14 +165,15 @@ main{
 }
 
 .tarjeta{
-    width: 270px;
-    height: 580px;
+    width: 680px;
+    height: 1150px;
     background: var(--color-letra-boton-azul);
-    box-shadow: 10px 24px 32px -8px var(--color-letra-boton-azul);
+    box-shadow: 10px 24px 82px -8px var(--color-letra-boton-azul);
     position: relative;
     margin-top: 40px;
     border-radius: 32px;
     text-align: center;
+    
 }
 .tarjeta-contenedor{
     width: 250px;
@@ -183,7 +188,7 @@ main{
 .texto-uno{
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 120%;
     text-align: center;
     color: var(--color-texto-respuesta-titulo);
@@ -193,7 +198,7 @@ main{
 .texto-dos{
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 22px;
     line-height: 150%;
     text-align: center;
     color: var(--color-texto-respuesta-subtitulo);
@@ -216,21 +221,23 @@ main{
     border-top-left-radius: 32px;
     border: none;
     resize: none;
+    text-align: center;
 }
 
 .evaluar:focus{
     outline: none;
 }
 .btn-copiar{
-    width: 224px;
-    height: 67px;
-    margin: 23px;
+    width: 300px;
+    height: 55px;
+    margin: 27px;
     position: absolute;
+
     bottom: 0;
     left: 0;
     visibility: hidden;
-    padding: 24px;
-    font-size: 16px;
+    padding: 4px;
+    font-size: 24px;
     line-height: 19px;
     text-align: center;
     background: var(--color-boton-des);
@@ -316,14 +323,18 @@ main{
     .encriptar{
         width: 90%;
         font-size: 24px;
+        width: 70%;
+        height: 70%;
     }
     .encriptador-contenedor{
         display: grid;
         gap: 21px;
+        width: 70%;
+        height: 70%;
 
     }
     .tarjeta{
-        width: 90%;
+        width: 70%;
     }
     .copyrigth{
         font-size: 20px;
